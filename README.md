@@ -1,4 +1,4 @@
-# ng2-store [![npm version](https://badge.fury.io/js/ng2-store.svg)](https://www.npmjs.com/package/ng2-store)
+# ng2-rest-store [![npm version](https://badge.fury.io/js/ng2-rest-store.svg)](https://www.npmjs.com/package/ng2-rest-store)
 An implementation of communication server for Angular 2.
 
 * [Installation](#installation)
