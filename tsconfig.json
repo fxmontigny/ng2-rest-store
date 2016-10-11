@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "es2015",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "types": [
+      "hammerjs",
+      "jasmine",
+      "node"
+    ],
+    "lib": [
+      "es2015",
+      "dom"
+    ]
+  },
+  "includes": [
+    "*.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "bundles",
+    "examples"
+  ],
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
+  }
+}

@@ -1,18 +1,3 @@
-# ng2-store [![npm version](https://badge.fury.io/js/ng2-store.svg)](https://www.npmjs.com/package/ng2-store)
-An implementation of communication server for Angular 2.
-
-* [Installation](#installation)
-* [Usage](#usage)
-
-## Installation
-First you need to install the npm module:
-```sh
-npm install ng2-store --save
-```
-
-## Usage
-
-```ts
 import {Component} from '@angular/core';
 import {Store} from 'ng2-store';
 
@@ -29,23 +14,21 @@ export class AppComponent {
     }
 
     test() {
-        //Example with https://jsonplaceholder.typicode.com/
+        //Tests with https://jsonplaceholder.typicode.com/
 
         let posts = new Store({
             id: "posts",
             proxy: {
                 url: "jsonplaceholder.typicode.com",
-                protocol: "https", //optional
-                headers: {"token": "123456"} //optional
+                protocol: "https",
+                headers: {"token": "123456"}
             }
         });
-        //auto create store request like "https://jsonplaceholder.typicode.com/posts" 
 
         Store.setDefaultProxy({
             url: "jsonplaceholder.typicode.com",
             protocol: "https"
         });
-        //create default proxy and set by default to the other new one
 
         let comments = new Store({
             id: "comments"
@@ -119,11 +102,10 @@ export class AppComponent {
                 console.log(data);
             });
 
-        //possibility to use store, after init, anywhere
         setTimeout(() => {
             let postsStatic = Store.get("posts");
             console.log(postsStatic.getAt(0).getData());
         }, 2000)
     }
+
 }
-```
