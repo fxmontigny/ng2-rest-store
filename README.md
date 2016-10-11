@@ -7,14 +7,14 @@ An implementation of communication server for Angular 2.
 ## Installation
 First you need to install the npm module:
 ```sh
-npm install ng2-store --save
+npm install ng2-rest-store --save
 ```
 
 ## Usage
 
 ```ts
 import {Component} from '@angular/core';
-import {Store} from 'ng2-store';
+import {Store} from 'ng2-rest-store';
 
 @Component({
     selector: 'app-root',

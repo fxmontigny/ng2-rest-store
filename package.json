@@ -1,29 +1,31 @@
 {
-  "name": "ng2-store",
+  "name": "ng2-rest-store",
   "description": "An implementation of server communication for Angular 2",
   "scripts": {
     "build": "tsc && node make.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fxmontigny/ng2-store.git"
+    "url": "git+https://github.com/fxmontigny/ng2-rest-store.git"
   },
   "keywords": [
     "angular",
     "angular2",
     "http",
     "store",
-    "ng2"
+    "ng2",
+    "rest",
+    "json"
   ],
-  "author": "François-Xavier Montigny",
+  "author": "François-Xavier Montigny <fxaviermontigny@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fxmontigny/ng2-store/issues"
+    "url": "https://github.com/fxmontigny/ng2-rest-store/issues"
   },
-  "main": "bundles/ng2-store.js",
-  "module": "ng2-store.js",
-  "typings": "./ng2-store.d.ts",
-  "homepage": "https://github.com/fxmontigny/ng2-store",
+  "main": "bundles/ng2-rest-store.js",
+  "module": "ng2-rest-store.js",
+  "typings": "./ng2-rest-store.d.ts",
+  "homepage": "https://github.com/fxmontigny/ng2-rest-store",
   "peerDependencies": {
     "@angular/core": "~2.0.0"
   },
